@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SuperRananas - Schedule</title>
+        <style>
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #666;
+    }
+
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 999;
+}
+
+main {
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+/* Style the nav element */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+/* Style the nav links */
+nav ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Style for calendar */
+.calendar {
+    width: 100%; /* Set calendar width to 100% of parent container */
+    background-color: #f2f2f2; /* Set background color for calendar */
+    /* padding: 10px; Add padding to calendar */
+}
+
+.calendar-header {
+    display: flex; /* Use flexbox for calendar header */
+    justify-content: center; /* Center align calendar header */
+    align-items: center; /* Center align calendar header */
+    margin-bottom: 10px; /* Add bottom margin to calendar header */
+}
+
+.month {
+    font-size: 24px; /* Set font size for month in calendar header */
+    margin-right: 10px; /* Add right margin to month in calendar header */
+}
+
+.year {
+    font-size: 24px; /* Set font size for year in calendar header */
+}
+
+.calendar-row {
+    display: flex; /* Use flexbox for calendar rows */
+}
+
+.calendar-cell {
+    flex: 1; /* Distribute calendar cells evenly within a row */
+    text-align: center; /* Center align text in calendar cells */
+    padding: 10px; /* Add padding to calendar cells */
+}
+
+.empty {
+    visibility: hidden; /* Hide empty cells in calendar */
+}
+
+h2{
+    text-align: center;
+}
+
+.calendar-cell {
+    text-align: center; /* Center align text in calendar cells */
+    padding: 10px; /* Add padding to calendar cells */
+    border: 1px solid #ccc; /* Add border around calendar cells */
+}
+
+.info-cell-green {
+    text-align: center; /* Center align text in calendar cells */
+    padding: 10px; /* Add padding to calendar cells */
+    border: 1px solid #000000; /* Add border around calendar cells */
+    background-color: #ffcc00;
+    width: 12.8%; /* Set calendar width to 100% of parent container */
+    align-self: center;
+}
+
+.info-cell-red {
+    text-align: center; /* Center align text in calendar cells */
+    padding: 10px; /* Add padding to calendar cells */
+    border: 1px solid #000000; /* Add border around calendar cells */
+    background-color: red;
+    width: 12.8%; /* Set calendar width to 100% of parent container */
+    align-items: center;
+}
+
+.info-cell-blue {
+    text-align: center; /* Center align text in calendar cells */
+    padding: 10px; /* Add padding to calendar cells */
+    border: 1px solid #000000; /* Add border around calendar cells */
+    background-color: blue;
+    width: 12.8%; /* Set calendar width to 100% of parent container */
+    align-items: center;
+}
+
+.calendar-row {
+    display: flex; /* Use flexbox for calendar rows */
+}
+
+#info.boxes{
+    float: right;
+}
+
+
+
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>
+            Ohio SuperRananas
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="news.html">What's Happening</a></li>
+                <li><a href="about.html">About</a></li> <!-- Update the link to about.html -->
+            </ul>
+        </nav>
+    </header>
+<main>
+<section id="schedule">
+    <h2>Schedule</h2>
+    <div class="calendar">
+        <div class="calendar-header">
+            <span class="month">April</span>
+            <span class="year">2023</span>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-row">
+                <div class="calendar-cell">Sun</div>
+                <div class="calendar-cell">Mon</div>
+                <div class="calendar-cell">Tue</div>
+                <div class="calendar-cell">Wed</div>
+                <div class="calendar-cell">Thu</div>
+                <div class="calendar-cell">Fri</div>
+                <div class="calendar-cell">Sat</div>
+            </div>
+            <div class="calendar-row">
+                <div class="calendar-cell empty"></div>
+                <div class="calendar-cell empty"></div>
+                <div class="calendar-cell empty"></div>
+                <div class="calendar-cell empty"></div>
+                <div class="calendar-cell empty"></div>
+                <div class="calendar-cell empty"></div>
+                <div class="info-cell-red">1</div>
+            </div>            
+                <div class="calendar-row">
+                    <div class="info-cell-red">2</div>
+                    <div class="info-cell-green">3</div>
+                    <div class="info-cell-green">4</div>
+                    <div class="info-cell-green">5</div>
+                    <div class="info-cell-green">6</div>
+                    <div class="info-cell-green">7</div>
+                    <div class="info-cell-red">8</div>
+                </div>
+                    <div class="calendar-row">
+                        <div class="info-cell-red">9</div>
+                        <div class="info-cell-green">10</div>
+                        <div class="info-cell-green">11</div>
+                        <div class="info-cell-green">12</div>
+                        <div class="info-cell-green">13</div>
+                        <div class="info-cell-green">14</div>
+                        <div class="info-cell-red">15</div>
+                    </div>
+                        <div class="calendar-row">
+                            <div class="info-cell-red">16</div>
+                            <div class="info-cell-green">17</div>
+                            <div class="info-cell-green">18</div>
+                            <div class="info-cell-green">19</div>
+                            <div class="info-cell-green">20</div>
+                            <div class="info-cell-green">21</div>
+                            <div class="info-cell-red">22</div>
+                        </div>
+                            <div class="calendar-row">
+                                <div class="info-cell-red">23</div>
+                                <div class="info-cell-green">24</div>
+                                <div class="info-cell-green">25</div>
+                                <div class="info-cell-green">26</div>
+                                <div class="info-cell-green">27</div>
+                                <div class="info-cell-green">28</div>
+                                <div class="info-cell-red">29</div>
+                            </div>
+                                <div class="calendar-row">
+                                    <div class="info-cell-red">30</div>
+                                    <div class="calendar-cell empty"></div>
+                                    <div class="calendar-cell empty"></div>
+                                    <div class="calendar-cell empty"></div>
+                                    <div class="calendar-cell empty"></div>
+                                    <div class="calendar-cell empty"></div>
+                                    <div class="calendar-cell empty"></div>
+                                </div>
+        </div>
+    </div>
+</section>
+<section id="info-boxes"">
+<div class="info-cell-green" style="position:relative; left: 43%;">Green = Practice</div>
+<div class="info-cell-red" style="position:relative; left: 43%;">Red = Offday</div>
+<div class="info-cell-blue" style="position:relative; left: 43%;">Blue = Game</div>
+</section>
+</main>
+</body>
+<html>
